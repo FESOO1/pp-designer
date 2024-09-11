@@ -1,0 +1,39 @@
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+/* HOME CONTENT */
+
+.home-content {
+    width: 700px;
+}
+
+.home-content-greeting-texts {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    padding-block: 8px;
+    overflow: hidden;
+}
+
+.home-content-greeting-texts-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    transition: transform 400ms;
+}
+
+.home-content-greeting-text {
+    color: white;
+    font-family: var(--f-generalsans-light);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 1cap;
+}
