@@ -27,6 +27,20 @@ main {
     align-items: center;
     row-gap: 20px;
     transition: transform 400ms;
+    animation: 20s infinite greetings-text-inner-animation;
+}
+
+@keyframes greetings-text-inner-animation {
+    0%{transform: translateY(0px);}
+    19%{transform: translateY(0px);}
+    20%{transform: translateY(-60px);}
+    39%{transform: translateY(-60px);}
+    40%{transform: translateY(-120px);}
+    59%{transform: translateY(-120px);}
+    60%{transform: translateY(-180px);}
+    79%{transform: translateY(-180px);}
+    60%{transform: translateY(-240px);}
+    79%{transform: translateY(-240px);}
 }
 
 .home-content-greeting-text {
