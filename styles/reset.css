@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('./general-sans.css');
+
+:root {
+    --f-inter: "Inter", sans-serif;
+    --f-generalsans-light: 'GeneralSans-Light';
+    --f-generalsans-medium: 'GeneralSans-Medium';
+    --f-generalsans-semibold: 'GeneralSans-Semibold';
+    --f-generalsans-bold: 'GeneralSans-Bold';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515;
+}
