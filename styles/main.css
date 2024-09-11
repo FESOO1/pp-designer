@@ -52,3 +52,10 @@ main {
     font-size: 3.5rem;
     line-height: 1cap;
 }
+
+/* ABOUT ME */
+
+.home-content-about-me {
+    height: 1px;
+    background-color: red;
+}
