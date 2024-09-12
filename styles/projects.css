@@ -1,0 +1,163 @@
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    padding-bottom: 75px;
+}
+
+/* CONTACT CONTENT */
+
+.projects-content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+}
+
+.projects-content-text {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-content-text-itself {
+    color: #353434;
+    font-family: var(--f-generalsans-light);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+/* PROJECTS THEMSELVES */
+
+.projects-themselves {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.project {
+    background-color: #131313;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+    padding: 7px;
+    transition: border 300ms;
+}
+
+.project-picture {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+.project-picture::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(circle at 50% 50%, transparent, black); */
+    background: linear-gradient(transparent, transparent, black);
+}
+
+.project-picture-itself {
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+    transition: scale 400ms;
+}
+
+.project-info {
+    width: 100%;
+    padding: 25px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    z-index: 1;
+}
+
+.project-name {
+    color: white;
+    font-family: var(--f-generalsans-medium);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.what-the-project-is-about {
+    color: rgb(190,190,190);
+    font-family: var(--f-inter);
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.project-view {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.project-view-inner {
+    display: flex;
+    align-items: center;
+    scale: 3;
+    transition: scale 400ms;
+}
+
+.project-view-inner-text {
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--f-generalsans-medium);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.project-view-inner-svg {
+    --size: 28px;
+    color: white;
+    width: var(--size);
+    height: var(--size);
+    transform: rotateZ(45deg);
+    transition: transform 400ms;
+}
+
+/* PROJECT STATES */
+
+.project:hover {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.project:hover .project-picture-itself {
+    scale: 1;
+}
+
+.project:hover .project-view {
+    opacity: 1;
+}
+
+.project:hover .project-view-inner {
+    scale: 1;
+}
+
+.project:hover .project-view-inner-svg {
+    transform: rotateZ(0);
+}
