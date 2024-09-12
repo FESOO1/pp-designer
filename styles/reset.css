@@ -16,5 +16,6 @@
 }
 
 body {
-    background: #151515;
+    background: url(../assets/body-bg.svg);
+    background-color: #151515;
 }
