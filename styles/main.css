@@ -10,6 +10,9 @@ main {
 
 .home-content {
     width: 700px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
 }
 
 .home-content-greeting-texts {
@@ -55,7 +58,139 @@ main {
 
 /* ABOUT ME */
 
-.home-content-about-me {
-    height: 1px;
-    background-color: red;
+.home-content-about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.home-content-author {
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* HOME TOP */
+
+.home-content-author-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #131313;
+}
+
+.home-content-author-itself {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.home-content-author-image {
+    --img-siz: 45px;
+    width: var(--img-siz);
+    height: var(--img-siz);
+}
+
+.home-content-author-image-itself {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.home-content-author-info {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--f-generalsans-light);
+}
+
+.home-content-author-full-name {
+    color: white;
+    font-weight: 500;
+}
+
+.home-content-author-role {
+    color: rgb(114, 114, 114);
+    font-family: var(--f-inter);
+    font-weight: 400;
+}
+
+.home-content-author-contact {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.contact-button {
+    padding-inline: 15px;
+    height: 40px;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    text-decoration: none;
+    transition: border 300ms, background-color 300ms;
+}
+
+.contact-button-text {
+    color: white;
+    font-family: var(--f-generalsans-medium);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.contact-button:hover {
+    background-color: rgb(40, 40, 40);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-button-svg {
+    display: none;
+}
+
+.copy-email-button {
+    padding-inline: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.05);
+    cursor: pointer;
+    transition: border 300ms;
+}
+
+.copy-email-button-svg {
+    --svg-size: 16px;
+    width: var(--svg-size);
+    height: var(--svg-size);
+    color: white;
+}
+
+.copy-email-button-text {
+    color: white;
+    font-family: var(--f-generalsans-medium);
+    text-transform: uppercase;
+}
+
+.copy-email-button:hover {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* HOME BOTTOM */
+
+.home-content-author-bottom {
+    padding: 15px 25px;
+    background-color: rgb(28, 28, 28);
+    border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+.home-content-author-bottom > p {
+    line-height: 25px;
+    color: white;
+    font-family: var(--f-generalsans-light);
 }

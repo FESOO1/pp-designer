@@ -1,21 +1,15 @@
-const greetingsTextContainer = document.querySelector('.home-content-greeting-texts-inner');
+const copyBtn = document.querySelector('.copy-email-button');
+const copyBtnText = document.querySelector('.copy-email-button-text');
 
-function greetingsText() {
+// COPY FUNCTION
+
+copyBtn.addEventListener('click', copyEmail);
+
+function copyEmail() {
+    navigator.clipboard.writeText('firdavs7794948@gmail.com');
+    copyBtnText.textContent = 'Copied';
+
     setTimeout(() => {
-        greetingsTextContainer.style.transform = 'translateY(-60px)';
+        copyBtnText.textContent = 'E-mail'
     }, 3000);
-    setTimeout(() => {
-        greetingsTextContainer.style.transform = 'translateY(-120px)';
-    }, 6000);
-    setTimeout(() => {
-        greetingsTextContainer.style.transform = 'translateY(-180px)';
-    }, 9000);
-    setTimeout(() => {
-        greetingsTextContainer.style.transform = 'translateY(-240px)';
-    }, 12000);
-    setTimeout(() => {
-        greetingsTextContainer.style.transform = 'translateY(0px)';
-    }, 15000);
 };
-
-greetingsText();
