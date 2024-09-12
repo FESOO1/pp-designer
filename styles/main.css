@@ -194,3 +194,11 @@ main {
     color: white;
     font-family: var(--f-generalsans-light);
 }
+
+/* SERVICES */
+
+.home-content-about-services {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
